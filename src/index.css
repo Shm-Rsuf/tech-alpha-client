@@ -8,7 +8,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-/******** Navbar Desing ********/
+/******** Navbar Desing Starts ********/
 .nav-link {
   position: relative;
 }
@@ -28,3 +28,5 @@ body {
 .nav-link:hover::after {
   width: 100%;
 }
+
+/********** Navbar Design Ends  */
