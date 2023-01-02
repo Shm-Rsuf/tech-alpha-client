@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
 
 html,
 body {
@@ -11,6 +12,11 @@ body {
 
 body {
   font-family: "Poppins", sans-serif;
+}
+
+/* Utilities */
+.space-font {
+  font-family: "Space Grotesk", sans-serif;
 }
 
 /******** Navbar Desing Starts ********/
@@ -48,4 +54,26 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+/********** Slide Design Starts  */
+.slide-btn {
+  position: relative;
+}
+
+.slide-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #f97316;
+  width: 0%;
+  transition: 0.5s ease;
+}
+
+.slide-btn:hover::before {
+  width: 100%;
 }
