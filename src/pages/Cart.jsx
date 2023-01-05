@@ -119,7 +119,9 @@ const Cart = () => {
             checkout
           </button>
           <button className="continue flex justify-center items-center gap-1 uppercase text-sky-500 font-medium tracking-tighter hover:-translate-x-1 duration-300">
-            <BsArrowLeft />
+            <span>
+              <BsArrowLeft />
+            </span>
             <span>continue shopping</span>
           </button>
         </div>
