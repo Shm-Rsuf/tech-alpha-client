@@ -57,7 +57,7 @@ const Cart = () => {
             <div className="products flex flex-col">
               {data.map((product) => (
                 <div
-                  key={product.id}
+                  key={product._id}
                   className="product grid grid-cols-5 gap-10 border-b-2 pb-5 mt-5"
                 >
                   <div className="left flex col-span-2 gap-5">

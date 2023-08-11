@@ -16,7 +16,7 @@ const cartSlice = createSlice({
     addToCart(state, action) {
       //if the item is already in the cart
       const existedItemIndex = state.cartItems.findIndex(
-        (item) => item.id === action.payload.id
+        (item) => item._id === action.payload._id
       );
 
       //if item exist
@@ -56,7 +56,7 @@ const cartSlice = createSlice({
     //card removed
     removeFromCart(state, action) {
       const updatedCaerItem = state.cartItems.filter(
-        (item) => item.id !== action.payload.id
+        (item) => item._id !== action.payload._id
       );
       state.cartItems = updatedCaerItem;
       //toast is here
@@ -98,7 +98,7 @@ const cartSlice = createSlice({
     //decrease cart
     decreaseCart(state, action) {
       const itemIndex = state.cartItems.findIndex(
-        (item) => item.id === action.payload.id
+        (item) => item._id === action.payload._id
       );
 
       //if index is available
@@ -118,7 +118,7 @@ const cartSlice = createSlice({
         });
       } else if (state.cartItems[itemIndex].cartQuantity === 1) {
         const updatedCartItems = state.cartItems.filter(
-          (item) => item.id !== action.payload.id
+          (item) => item._id !== action.payload._id
         );
         state.cartItems = updatedCartItems;
 
