@@ -6,11 +6,12 @@ const initialState = {
   status: null,
 };
 
+// "https://eager-sable-airedale.glitch.me/products"
 export const productFetching = createAsyncThunk(
   "products/productFetching",
   async () => {
     const res = await axios.get(
-      "https://eager-sable-airedale.glitch.me/products"
+      "https://tech-alpha-jj7a.onrender.com/api/products"
     );
     return res.data;
   }

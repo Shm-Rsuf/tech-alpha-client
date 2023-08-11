@@ -3,6 +3,7 @@ import Cart from "../components/Cart";
 
 const Products = () => {
   const { items: data, status } = useSelector((state) => state.products);
+  console.log("data: ", data);
   return (
     <div className="products-section container mx-auto py-5">
       <h2 className="products-title uppercase font-bold text-xl text-center mb-5 space-font">

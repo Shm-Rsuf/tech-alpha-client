@@ -15,16 +15,22 @@ const Cart = ({ product }) => {
 
   return (
     <div className="product flex flex-col gap-2 bg-white shadow-md  rounded-lg overflow-hidden hover:shadow-2xl duration-500">
-      <div className="img">
-        <img src={product.image} alt={product.name} />
+      <div className="img h-72 overflow-hidden">
+        <img
+          src={product.image}
+          alt={product.name}
+          className="w-full h-full object-cover"
+        />
       </div>
 
       <div className="texts flex flex-col gap-2 px-5 pb-5">
         <span className="category-tag uppercase text-xs font-bold text-teal-500">
           {product.category}
         </span>
-        <h3 className="title font-medium h-[4.5rem]">{product.name}</h3>
-        <p className="details text-sm text-gray-500 h-[5.2rem]">
+        <h3 className="title font-medium h-[4.5rem] overflow-hidden">
+          {product.name}
+        </h3>
+        <p className="details text-sm text-gray-500 h-[5.2rem] overflow-hidden">
           {product.description}
         </p>
         <div className="flex justify-between items-center">
