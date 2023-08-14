@@ -24,11 +24,11 @@
 
 ## Installation (Client)
 
-1. Clone the repository: git clone https://github.com/Shm-Rsuf/tech-alpha-client.git
-2. Navigate to the client directory: cd tech-alpha-client
-3. Install dependencies: npm install
-4. Start the client: npm start
-5. Access the client in your browser at: http://localhost:3000
+1. Clone the repository: `git clone https://github.com/Shm-Rsuf/tech-alpha-client.git`
+2. Navigate to the client directory: `cd tech-alpha-client`
+3. Install dependencies: `npm install`
+4. Start the client: `npm start`
+5. Access the client in your browser at: `https://localhost:3000`
 
 ## Installation (Server)
 
